@@ -29,10 +29,6 @@ describe('basic', function() {
     });
 
     it("", function() {
-      expect(null == undefined).toThrow();
-    });
-
-    it("", function() {
       expect({}).toThrow();
     });
   });
