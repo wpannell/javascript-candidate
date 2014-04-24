@@ -108,27 +108,27 @@ describe('basic', function() {
   });
 
   describe('is object?', function() {
-    function isObject(obj) {
+    function isNotEmptyObject(obj) {
     }
 
     it("", function() {
-      expect(isObject(null)).toThrow();
+      expect(isNotEmptyObject(null)).toBe(false);
     });
 
     it("", function() {
-      expect(isObject(undefined)).toThrow();
+      expect(isNotEmptyObject(undefined)).toBe(false);
     });
 
     it("", function() {
-      expect(isObject({})).toThrow();
+      expect(isNotEmptyObject({})).toBe(true);
     });
 
     it("", function() {
-      expect(isObject('')).toThrow();
+      expect(isNotEmptyObject('')).toBe(false);
     });
 
     it("", function() {
-      expect(isObject(1)).toThrow();
+      expect(isNotEmptyObject(1)).toBe(false);
     });
   });
 });
