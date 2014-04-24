@@ -7,11 +7,11 @@ describe('scope', function() {
     })();
 
     it("", function() {
-      expect(baz).toBe(5);
+      expect(baz).toBe();
     });
 
     it("", function() {
-      expect(window.bar).toBeUndefined();
+      expect(window.bar).toThrow();
     });
   });
 });
