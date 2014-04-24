@@ -1,21 +1,97 @@
 describe('basic', function() {
+  describe('truthy/falsy', function() {
+    it("", function() {
+      expect('').toThrow()
+    });
+
+    it("", function() {
+      expect('').toThrow()
+    });
+
+    it("", function() {
+      expect(0).toThrow();
+    });
+
+    it("", function() {
+      expect('0').toThrow();
+    });
+
+    it("", function() {
+      expect('false').toThrow();
+    });
+
+    it("", function() {
+      expect(false).toThrow();
+    });
+
+    it("", function() {
+      expect(undefined).toThrow();
+    });
+
+    it("", function() {
+      expect(null).toThrow();
+    });
+
+    it("", function() {
+      expect(null == undefined).toThrow();
+    });
+
+    it("", function() {
+      expect({}).toThrow();
+    });
+  });
+
+  describe('==', function() {
+    it("", function() {
+      expect('' == '0').toThrow();
+    });
+
+    it("", function() {
+      expect(0 == '').toThrow();
+    });
+
+    it("", function() {
+      expect(0 == '0').toThrow();
+    });
+
+    it("", function() {
+      expect(false == 'false').toThrow();
+    });
+
+    it("", function() {
+      expect(false == '0').toThrow();
+    });
+
+    it("", function() {
+      expect(false == undefined).toThrow();
+    });
+
+    it("", function() {
+      expect(false == null).toThrow();
+    });
+
+    it("", function() {
+      expect(null == undefined).toThrow();
+    });
+  });
+
   describe('check for null/undefined', function() {
     var bar;
 
     it("", function() {
-      expect(bar === null).toBe();
+      expect(bar === null).toThrow();
     });
 
     it("", function() {
-      expect(bar === undefined).toBe();
+      expect(bar === undefined).toThrow();
     });
 
     it("", function() {
-      expect(typeof bar === 'object').toBe();
+      expect(typeof bar === 'object').toThrow();
     });
 
     it("", function() {
-      expect(typeof bar === 'undefined').toBe();
+      expect(typeof bar === 'undefined').toThrow();
     });
   });
 
@@ -23,19 +99,19 @@ describe('basic', function() {
     var bar = null;
 
     it("", function() {
-      expect(bar === null).toBe();
+      expect(bar === null).toThrow();
     });
 
     it("", function() {
-      expect(bar === undefined).toBe();
+      expect(bar === undefined).toThrow();
     });
 
     it("", function() {
-      expect(typeof bar === 'object').toBe();
+      expect(typeof bar === 'object').toThrow();
     });
 
     it("", function() {
-      expect(typeof bar === 'undefined').toBe();
+      expect(typeof bar === 'undefined').toThrow();
     });
   });
 
@@ -44,23 +120,23 @@ describe('basic', function() {
     }
 
     it("", function() {
-      expect(isObject(null)).toBe(false);
+      expect(isObject(null)).toThrow();
     });
 
     it("", function() {
-      expect(isObject(undefined)).toBe(false);
+      expect(isObject(undefined)).toThrow();
     });
 
     it("", function() {
-      expect(isObject({})).toBe(true);
+      expect(isObject({})).toThrow();
     });
 
     it("", function() {
-      expect(isObject('')).toBe(false);
+      expect(isObject('')).toThrow();
     });
 
     it("", function() {
-      expect(isObject(1)).toBe(false);
+      expect(isObject(1)).toThrow();
     });
   });
 });
