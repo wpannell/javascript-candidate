@@ -5,10 +5,6 @@ describe('basic', function() {
     });
 
     it("", function() {
-      expect('').toThrow()
-    });
-
-    it("", function() {
       expect(0).toThrow();
     });
 
