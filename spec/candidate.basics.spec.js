@@ -1,38 +1,4 @@
 describe('basic', function() {
-  describe('truthy/falsy', function() {
-    it("", function() {
-      expect('').toThrow()
-    });
-
-    it("", function() {
-      expect(0).toThrow();
-    });
-
-    it("", function() {
-      expect('0').toThrow();
-    });
-
-    it("", function() {
-      expect('false').toThrow();
-    });
-
-    it("", function() {
-      expect(false).toThrow();
-    });
-
-    it("", function() {
-      expect(undefined).toThrow();
-    });
-
-    it("", function() {
-      expect(null).toThrow();
-    });
-
-    it("", function() {
-      expect({}).toThrow();
-    });
-  });
-
   describe('==', function() {
     it("", function() {
       expect('' == '0').toThrow();
@@ -108,8 +74,7 @@ describe('basic', function() {
   });
 
   describe('is object?', function() {
-    function isNotEmptyObject(obj) {
-    }
+    function isNotEmptyObject(obj) {}
 
     it("", function() {
       expect(isNotEmptyObject(null)).toBe(false);
